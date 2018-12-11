@@ -1,3 +1,13 @@
 .data    
    disk: .asciiz "Enter number of plates: "
    moves: "\nThe number of moves required is:  "
+
+.text
+   input:
+   la $a0,disk
+   li $v0,4 
+   syscall
+   li $v0,5
+   syscall
+   move $s0,$v0
+   li $t1,1
