@@ -1,0 +1,3 @@
+.data    
+   disk: .asciiz "Enter number of plates: "
+   moves: "\nThe number of moves required is:  "
