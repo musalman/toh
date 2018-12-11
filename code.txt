@@ -16,3 +16,15 @@
    addi $s0,$s0,-1
    mul $t1,$t1,2
    j hanoi
+   output:
+   mflo $t1
+   subi $t1,$t1,1
+   la $a0,moves
+   li $v0,4 
+   syscall
+   move $a0,$t1
+   li $v0,1
+   syscall
+   end:
+   li $v0,10
+   syscall
